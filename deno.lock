@@ -4,7 +4,6 @@
     "specifiers": {
       "npm:@aws-sdk/client-s3@3.418.0": "npm:@aws-sdk/client-s3@3.418.0",
       "npm:@aws-sdk/s3-request-presigner@3.418.0": "npm:@aws-sdk/s3-request-presigner@3.418.0",
-      "npm:@types/luxon@3.3.2": "npm:@types/luxon@3.3.2",
       "npm:luxon@3.4.3": "npm:luxon@3.4.3"
     },
     "npm": {
@@ -933,10 +932,6 @@
           "@smithy/types": "@smithy/types@2.3.3",
           "tslib": "tslib@2.6.2"
         }
-      },
-      "@types/luxon@3.3.2": {
-        "integrity": "sha512-l5cpE57br4BIjK+9BSkFBOsWtwv6J9bJpC7gdXIzZyI0vuKvNTk0wZZrkQxMGsUAuGW9+WMNWF2IJMD7br2yeQ==",
-        "dependencies": {}
       },
       "bowser@2.11.0": {
         "integrity": "sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==",

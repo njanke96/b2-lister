@@ -9,8 +9,6 @@ import {
 } from "npm:@aws-sdk/client-s3@3.418.0";
 
 import { getSignedUrl } from "npm:@aws-sdk/s3-request-presigner@3.418.0";
-
-// @deno-types="npm:@types/luxon@3.3.2"
 import { DateTime } from "npm:luxon@3.4.3";
 
 const BASIC_AUTH = Deno.env.get("BASIC_AUTH") ?? "no:pass";
