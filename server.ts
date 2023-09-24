@@ -128,6 +128,14 @@ router
         .wide-table {
           width: 100%;
         }
+        
+        a:link {
+          color: white;
+        }
+
+        a:visited {
+          color: #e8e8e8
+        }
       </style>
       </html>
     `;
