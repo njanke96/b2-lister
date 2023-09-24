@@ -1,15 +1,4 @@
-import * as path from "https://deno.land/std@0.202.0/path/mod.ts";
-import { decode } from "https://deno.land/std@0.202.0/encoding/base64.ts";
-import { Application, Router } from "https://deno.land/x/oak@v12.6.1/mod.ts";
-
-import {
-  GetObjectCommand,
-  ListObjectsCommand,
-  S3Client,
-} from "https://esm.sh/@aws-sdk/client-s3@3.418.0";
-
-import { getSignedUrl } from "https://esm.sh/@aws-sdk/s3-request-presigner@3.418.0";
-import { DateTime } from "https://esm.sh/luxon@3.4.3";
+import { Application, S3Client, decode, Router, ListObjectsCommand, path, GetObjectCommand, getSignedUrl, DateTime } from './deps.ts';
 
 const BASIC_AUTH = Deno.env.get("BASIC_AUTH") ?? "no:pass";
 const B2_ACCOUNT_ID = Deno.env.get("B2_ACCOUNT_ID") ?? "0";
