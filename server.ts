@@ -134,7 +134,7 @@ router
         }
 
         a:visited {
-          color: #e8e8e8
+          color: #a6a6a6
         }
       </style>
       </html>
