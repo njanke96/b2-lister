@@ -96,7 +96,7 @@ router
           <tr>
             <th>Name</th>
             <th>Size</th>
-            <th>Last Modified ↓</th>
+            <th>Last Modified</th>
           </tr>
           ${tableRows.join("\n")}
         </table>
