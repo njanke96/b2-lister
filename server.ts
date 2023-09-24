@@ -191,4 +191,6 @@ function mustHandle(_req: Request) {
   });
 }
 
-Deno.serve((_req) => mustHandle(_req));
+Deno.serve({
+  port: parseInt(Deno.env.get("PORT") ?? "8080") ?? 8080,
+}, (_req) => mustHandle(_req));
