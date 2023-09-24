@@ -3,7 +3,7 @@ import { Application, S3Client, decode, Router, ListObjectsCommand, path, GetObj
 const BASIC_AUTH = Deno.env.get("BASIC_AUTH") ?? "no:pass";
 const B2_ACCOUNT_ID = Deno.env.get("B2_ACCOUNT_ID") ?? "0";
 const B2_APPLICATION_KEY = Deno.env.get("B2_APPLICATION_KEY") ?? "0";
-const B2_REGION = Deno.env.get("B2_REGION") ?? "";
+const B2_REGION = Deno.env.get("B2_REGION") ?? "us-east-005";
 const B2_ENDPOINT = `https://s3.${B2_REGION}.backblazeb2.com`;
 const B2_BUCKET_NAME = Deno.env.get("B2_BUCKET_NAME") ?? "bucket";
 const DIRECTORY_PATH = Deno.env.get("B2_DIRECTORY_PATH") ?? "/";
