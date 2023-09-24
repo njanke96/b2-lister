@@ -6,10 +6,10 @@ import {
   GetObjectCommand,
   ListObjectsCommand,
   S3Client,
-} from "npm:@aws-sdk/client-s3@3.418.0";
+} from "https://esm.sh/@aws-sdk/client-s3@3.418.0";
 
-import { getSignedUrl } from "npm:@aws-sdk/s3-request-presigner@3.418.0";
-import { DateTime } from "npm:luxon@3.4.3";
+import { getSignedUrl } from "https://esm.sh/@aws-sdk/s3-request-presigner@3.418.0";
+import { DateTime } from "https://esm.sh/luxon@3.4.3";
 
 const BASIC_AUTH = Deno.env.get("BASIC_AUTH") ?? "no:pass";
 const B2_ACCOUNT_ID = Deno.env.get("B2_ACCOUNT_ID") ?? "0";
