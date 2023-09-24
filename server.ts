@@ -66,7 +66,7 @@ router
 
       const validContents = contents.filter((_object) => {
         return !!_object.Key;
-      });
+      }).sort((a, b) => (b.LastModified?.getTime() ?? 0) - (a.LastModified?.getTime() ?? 0));
 
       const tableRows = validContents.map((_object) => {
         const fileSize = formatFileSize(_object.Size);
@@ -96,7 +96,7 @@ router
           <tr>
             <th>Name</th>
             <th>Size</th>
-            <th>Last Modified</th>
+            <th>Last Modified ↓</th>
           </tr>
           ${tableRows.join("\n")}
         </table>
